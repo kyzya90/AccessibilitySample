@@ -12,6 +12,10 @@
 		11D0D902230295B100D10A31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D0D900230295B100D10A31 /* Main.storyboard */; };
 		11D0D904230295B300D10A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D0D903230295B300D10A31 /* Assets.xcassets */; };
 		11D0D907230295B300D10A31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D0D905230295B300D10A31 /* LaunchScreen.storyboard */; };
+		11D0D912230295DA00D10A31 /* CoolButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D0D911230295DA00D10A31 /* CoolButtonView.swift */; };
+		11D0D914230295E400D10A31 /* CoolButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D0D913230295E400D10A31 /* CoolButtonView.xib */; };
+		11D0D9162302A2C800D10A31 /* OneMoreCoolButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D0D9152302A2C800D10A31 /* OneMoreCoolButton.swift */; };
+		11D0D9182302A2D100D10A31 /* OneMoreCoolButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D0D9172302A2D100D10A31 /* OneMoreCoolButton.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		11D0D903230295B300D10A31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11D0D906230295B300D10A31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11D0D908230295B300D10A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11D0D911230295DA00D10A31 /* CoolButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolButtonView.swift; sourceTree = "<group>"; };
+		11D0D913230295E400D10A31 /* CoolButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoolButtonView.xib; sourceTree = "<group>"; };
+		11D0D9152302A2C800D10A31 /* OneMoreCoolButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneMoreCoolButton.swift; sourceTree = "<group>"; };
+		11D0D9172302A2D100D10A31 /* OneMoreCoolButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneMoreCoolButton.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 		11D0D8FB230295B100D10A31 /* Accessibility test */ = {
 			isa = PBXGroup;
 			children = (
+				11D0D910230295DA00D10A31 /* Views */,
 				11D0D8FC230295B100D10A31 /* AppDelegate.swift */,
 				11D0D8FE230295B100D10A31 /* ViewController.swift */,
 				11D0D900230295B100D10A31 /* Main.storyboard */,
@@ -62,6 +71,17 @@
 				11D0D908230295B300D10A31 /* Info.plist */,
 			);
 			path = "Accessibility test";
+			sourceTree = "<group>";
+		};
+		11D0D910230295DA00D10A31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11D0D911230295DA00D10A31 /* CoolButtonView.swift */,
+				11D0D913230295E400D10A31 /* CoolButtonView.xib */,
+				11D0D9152302A2C800D10A31 /* OneMoreCoolButton.swift */,
+				11D0D9172302A2D100D10A31 /* OneMoreCoolButton.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +145,8 @@
 				11D0D907230295B300D10A31 /* LaunchScreen.storyboard in Resources */,
 				11D0D904230295B300D10A31 /* Assets.xcassets in Resources */,
 				11D0D902230295B100D10A31 /* Main.storyboard in Resources */,
+				11D0D9182302A2D100D10A31 /* OneMoreCoolButton.xib in Resources */,
+				11D0D914230295E400D10A31 /* CoolButtonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D0D9162302A2C800D10A31 /* OneMoreCoolButton.swift in Sources */,
 				11D0D8FF230295B100D10A31 /* ViewController.swift in Sources */,
 				11D0D8FD230295B100D10A31 /* AppDelegate.swift in Sources */,
+				11D0D912230295DA00D10A31 /* CoolButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
