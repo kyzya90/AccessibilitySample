@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1160B5A7230A801800E0235D /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1160B5A6230A801800E0235D /* ChildViewController.swift */; };
 		11D0D8FD230295B100D10A31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D0D8FC230295B100D10A31 /* AppDelegate.swift */; };
 		11D0D8FF230295B100D10A31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D0D8FE230295B100D10A31 /* ViewController.swift */; };
 		11D0D902230295B100D10A31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D0D900230295B100D10A31 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1160B5A6230A801800E0235D /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChildViewController.swift; path = ChildVC/ChildViewController.swift; sourceTree = "<group>"; };
 		11D0D8F9230295B100D10A31 /* Accessibility test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accessibility test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D0D8FC230295B100D10A31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11D0D8FE230295B100D10A31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				11D0D8FC230295B100D10A31 /* AppDelegate.swift */,
 				11D0D8FE230295B100D10A31 /* ViewController.swift */,
 				11D0D900230295B100D10A31 /* Main.storyboard */,
+				1160B5A6230A801800E0235D /* ChildViewController.swift */,
 				11D0D903230295B300D10A31 /* Assets.xcassets */,
 				11D0D905230295B300D10A31 /* LaunchScreen.storyboard */,
 				11D0D908230295B300D10A31 /* Info.plist */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D0D9162302A2C800D10A31 /* OneMoreCoolButton.swift in Sources */,
+				1160B5A7230A801800E0235D /* ChildViewController.swift in Sources */,
 				11D0D8FF230295B100D10A31 /* ViewController.swift in Sources */,
 				11D0D8FD230295B100D10A31 /* AppDelegate.swift in Sources */,
 				11D0D912230295DA00D10A31 /* CoolButtonView.swift in Sources */,

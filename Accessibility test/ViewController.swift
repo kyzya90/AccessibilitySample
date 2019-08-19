@@ -33,5 +33,11 @@ class ViewController: UIViewController {
         anotherButton.rightAnchor.constraint(equalTo: anotherContainerView.rightAnchor).isActive = true
         anotherButton.bottomAnchor.constraint(equalTo: anotherContainerView.bottomAnchor).isActive = true
     }
+    @IBAction func didTapPresent(_ sender: Any) {
+        let viewController = ChildViewController.viewController()
+        self.present(viewController,
+                     animated: true,
+                     completion: nil)
+    }
 }
 
