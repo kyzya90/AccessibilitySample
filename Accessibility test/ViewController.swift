@@ -18,26 +18,29 @@ class ViewController: UIViewController {
 
         let button = CoolButtonView.view()
         containerView.addSubview(button)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.topAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
-        button.leftAnchor.constraint(equalTo: containerView.leftAnchor).isActive = true
-        button.rightAnchor.constraint(equalTo: containerView.rightAnchor).isActive = true
-        button.bottomAnchor.constraint(equalTo: containerView.bottomAnchor).isActive = true
+        pinToSuperview(view: button)
 
 
         let anotherButton = OneMoreCoolButton.view()
         anotherContainerView.addSubview(anotherButton)
-        anotherButton.translatesAutoresizingMaskIntoConstraints = false
-        anotherButton.topAnchor.constraint(equalTo: anotherContainerView.topAnchor).isActive = true
-        anotherButton.leftAnchor.constraint(equalTo: anotherContainerView.leftAnchor).isActive = true
-        anotherButton.rightAnchor.constraint(equalTo: anotherContainerView.rightAnchor).isActive = true
-        anotherButton.bottomAnchor.constraint(equalTo: anotherContainerView.bottomAnchor).isActive = true
+        pinToSuperview(view: anotherButton)
     }
     @IBAction func didTapPresent(_ sender: Any) {
         let viewController = ChildViewController.viewController()
-        self.present(viewController,
-                     animated: true,
-                     completion: nil)
+        viewController.willMove(toParent: self)
+        view.addSubview(viewController.view)
+        pinToSuperview(view: viewController.view)
+        addChild(viewController)
+    }
+
+
+    private func pinToSuperview(view: UIView) {
+        guard let superview = view.superview else { fatalError() }
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.topAnchor.constraint(equalTo: superview.topAnchor).isActive = true
+        view.leftAnchor.constraint(equalTo: superview.leftAnchor).isActive = true
+        view.rightAnchor.constraint(equalTo: superview.rightAnchor).isActive = true
+        view.bottomAnchor.constraint(equalTo: superview.bottomAnchor).isActive = true
     }
 }
 
