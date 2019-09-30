@@ -15,7 +15,14 @@ class CoolButtonView: UIView {
         super.awakeFromNib()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapButton))
         self.addGestureRecognizer(tapGesture)
-        textLabel.font = UIFontMetrics.default.scaledFont(for: textLabel.font)
+        setupAccessibility()
+    }
+
+    private func setupAccessibility() {
+        isAccessibilityElement = true
+        accessibilityLabel = textLabel.text
+        accessibilityHint = "Selects the flag"
+        accessibilityTraits = UIAccessibilityTraits.button
     }
 
     @objc
