@@ -32,9 +32,9 @@
                         </view>
                     </subviews>
                 </stackView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRANCE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2N2-3D-t0b">
-                    <rect key="frame" x="40.5" y="62.5" width="95" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRANCE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2N2-3D-t0b">
+                    <rect key="frame" x="55.5" y="67.5" width="65" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -53,6 +53,9 @@
                 <constraint firstItem="2N2-3D-t0b" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ypM-01-LVe"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textLabel" destination="2N2-3D-t0b" id="erB-Ek-II3"/>
+            </connections>
             <point key="canvasLocation" x="184" y="-225"/>
         </view>
     </objects>

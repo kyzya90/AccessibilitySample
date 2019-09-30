@@ -15,6 +15,7 @@ class CoolButtonView: UIView {
         super.awakeFromNib()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapButton))
         self.addGestureRecognizer(tapGesture)
+        textLabel.font = UIFontMetrics.default.scaledFont(for: textLabel.font)
     }
 
     @objc
@@ -22,6 +23,7 @@ class CoolButtonView: UIView {
         print("Button is pressed")
     }
 
+    @IBOutlet weak var textLabel: UILabel!
     override func layoutSubviews() {
         super.layoutSubviews()
         layer.cornerRadius = frame.width / 2
