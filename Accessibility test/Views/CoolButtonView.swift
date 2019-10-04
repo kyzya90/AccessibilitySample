@@ -15,7 +15,7 @@ class CoolButtonView: UIView {
         super.awakeFromNib()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapButton))
         self.addGestureRecognizer(tapGesture)
-        textLabel.font = UIFontMetrics.default.scaledFont(for: textLabel.font)
+        applyAccessibility()
     }
 
     @objc
@@ -36,5 +36,17 @@ class CoolButtonView: UIView {
                                          options: nil).first as? CoolButtonView
         else { fatalError() }
         return view
+    }
+
+    private func applyAccessibility() {
+        // Dynamic font type
+        textLabel.font = UIFontMetrics.default.scaledFont(for: textLabel.font)
+        // Voice over support
+        isAccessibilityElement = true
+        accessibilityLabel = textLabel.text
+        accessibilityHint = "Selects the \(textLabel.text) flag"
+        accessibilityTraits = .button
+        // ignore inverting colors
+        accessibilityIgnoresInvertColors = true
     }
 }
